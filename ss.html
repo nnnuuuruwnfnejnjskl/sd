@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 наурыз </title>
+    <link rel="stylesheet" href="de.css">
+    <link rel="javascript" href="df.js">
+</head>
+<body>
+    <div class="container">
+        <h1>8 наурыз құтты болсын қыздар</h1>
+        <p>оздеринин аттарынды басындар</p>
+        <div class="buttons">
+            <button onclick="playAudio('aidana.mp3')">Aйдана</button>
+            <button onclick="playAudio('э.wav')">Энхара</button>
+            <button onclick="playAudio('aa.wav')">Баянсұлу</button>
+            <button onclick="playAudio('a.wav')">Ақбота</button>
+            <button onclick="playAudio('aaa.wav')">Дана</button>
+            <button onclick="playAudio('dina.wav')">Дина</button>
+            <button onclick="playAudio('ami.wav')">Амина</button>
+        </div>
+        <audio id="audioPlayer" src="" hidden></audio>
+    </div>
+    
+    <script>
+        function playAudio(src) {
+            let audio = document.getElementById("audioPlayer");
+            audio.src = src;
+            audio.play();
+        }
+    </script>
+</body>
+</html>
